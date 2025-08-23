@@ -10,7 +10,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
       <div className="">
            <Routes>
               <Route path='/' element={<DashBoard/>}/>
-              <Route path='/userdetail/:id' element={<UserDetail/>}/>
+              <Route path='/userdetail' element={<UserDetail/>}/>
            </Routes>
 
       </div>
