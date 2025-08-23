@@ -1,10 +1,21 @@
  import React from 'react'
+import DashBoard from './assets/components/DashBoard'
+import UserDetail from './assets/components/UserDetail'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
  
  const App = () => {
    return (
-        <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+      <>
+
+      <div className="">
+           <Routes>
+              <Route path='/' element={<DashBoard/>}/>
+              <Route path='/userdetail/:id' element={<UserDetail/>}/>
+           </Routes>
+
+      </div>
+      
+      </>
 
    )
  }
