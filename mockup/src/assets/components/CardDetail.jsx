@@ -1,5 +1,5 @@
 import React from "react";
-import { MessageSquare, SearchCheck, Eye, UserRound } from "lucide-react";
+import { MessageSquare, SearchCheck, Eye, UserRound,Check,Bookmark  } from "lucide-react";
 
 const CardDetail = () => {
   const userData = {
@@ -40,14 +40,14 @@ const CardDetail = () => {
   };
 return (
     <>
-        <div className="flex flex-col md:flex-row justify-between gap-10 bg-white p-10 rounded-lg w-full md:w-[70%]">
+        <div className="flex flex-col md:flex-row md:justify-between gap-10 bg-white p-10 rounded-lg w-full md:w-[100%]">
             <div className="flex flex-col md:flex-row gap-10">
                 <img src={userData.avatar} alt="" className="w-[300px]" />
                 <div className="grid gap-3 border-b border-gray-200 ">
                     <div className="flex flex-col gap-2">
                         <h1 className="text-3xl font-bold text-gray-500">
                             {userData.username}{" "}
-                            <span className="text-gray-300 text-sm ml-5">
+                            <span className="text-gray-400 text-sm ml-5">
                                 {userData.location}
                             </span>
                         </h1>
@@ -91,7 +91,7 @@ return (
                         </div>
 
                         <div className="flex items-center gap-3 bg-blue-100 px-6 py-2">
-                            <SearchCheck className="text-gray-500" />
+                            <Check className="text-blue-500" />
                             <span className="text-blue-500 font-semibold text-lg">
                                 Contacts
                             </span>
@@ -113,9 +113,13 @@ return (
                     </div>
                 </div>
             </div>
-            {/* <div className="flex flex-1 flex-col items-end">
-                <div className="self-end mb-auto">widj</div>
-            </div> */}
+            <div className="">
+                <div className="flex items-center gap-2">
+                        <Bookmark  className="text-gray-500 w-[20px]"/>
+
+                     <h1 className="text-gray-500 font-semibold">Bookmarks</h1>
+                </div>
+            </div>
         </div>
     </>
 );

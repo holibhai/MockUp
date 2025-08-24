@@ -173,7 +173,7 @@ const DashBoard = () => {
       case "Inactive":
         return "bg-gray-400";
       default:
-        return "bg-blue-500";
+        return "bg-blue-400";
     }
   };
 
@@ -210,7 +210,7 @@ const DashBoard = () => {
   return (
     <div className="min-h-screen bg-gray-50 p-4 md:p-6">
       {/* Header */}
-      <div className="bg-blue-500 text-white p-4 md:p-5 rounded-lg mb-6 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div className="bg-blue-400 text-white p-4 md:p-5 rounded-lg mb-6 flex flex-col md:flex-row justify-between items-center gap-4">
         <h1 className="text-2xl font-bold">
           User <span className="font-semibold">Management</span>
         </h1>
@@ -312,7 +312,7 @@ const DashBoard = () => {
                 key={page}
                 className={`w-8 h-8 rounded-md ${
                   currentPage === page
-                    ? "bg-blue-600 text-white"
+                    ? "bg-blue-400 text-white"
                     : "hover:bg-gray-100"
                 } transition-colors`}
                 onClick={() => handlePageChange(page)}
