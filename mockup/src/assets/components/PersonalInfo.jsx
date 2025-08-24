@@ -64,12 +64,7 @@ return (
                                 <td className="pr-4 align-top py-2">Website</td>
                                 <td className="text-blue-400 py-2">www.jeremyrose.com</td>
                             </tr>
-                        </tbody>
-                    </table>
-                    <div className="pt-6 border-t border-gray-200">
-                        <h2 className="text-sm font-semibold text-gray-600 mb-4">BASIC INFORMATION</h2>
-                        <table className="w-full ">
-                            <tbody>
+                        <h2 className="text-sm font-semibold text-gray-600 mb-4 my-8">BASIC INFORMATION</h2>
                                 <tr>
                                     <td className="pr-4 align-top py-2">Birthday</td>
                                     <td className="text-gray-700 py-2">June 5, 1992</td>
@@ -84,7 +79,7 @@ return (
                 </div>
             </div>
         </div>
-    </div>
+    // </div>
 );
 };
 

@@ -41,7 +41,7 @@ const CardDetail = () => {
 return (
     <>
         <div className="flex flex-col md:flex-row justify-between gap-10 bg-white p-10 rounded-lg w-full md:w-[70%]">
-            <div className="grid grid-cols-2">
+            <div className="flex flex-col md:flex-row gap-10">
                 <img src={userData.avatar} alt="" className="w-[300px]" />
                 <div className="grid gap-3 border-b border-gray-200 ">
                     <div className="flex flex-col gap-2">
@@ -82,7 +82,7 @@ return (
                         </div>
                     </div>
 
-                    <div className="flex items-center gap-3 mt-5">
+                    <div className="flex items-center gap-10 mt-5 w-full">
                         <div className="flex items-center justify-center gap-3 ">
                             <MessageSquare className="text-gray-500" />
                             <span className="text-lg text-gray-600 font-semibold">
@@ -113,9 +113,9 @@ return (
                     </div>
                 </div>
             </div>
-            <div className="flex flex-1 flex-col items-end">
+            {/* <div className="flex flex-1 flex-col items-end">
                 <div className="self-end mb-auto">widj</div>
-            </div>
+            </div> */}
         </div>
     </>
 );

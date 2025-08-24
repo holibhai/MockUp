@@ -14,11 +14,11 @@ const Header = () => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-blue-600">Kodecolor</h1>
+              <h1 className="text-3xl font-bold text-gray-600">Kodecolor</h1>
             </div>
 
             {/* Search Bar */}
-            <div className="flex-1  mx-8">
+            <div className="mx-8">
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                   <Search className="h-5  text-gray-400" />
@@ -34,7 +34,7 @@ const Header = () => {
             </div>
 
             {/* Navigation */}
-            <nav className="hidden md:flex space-x-8">
+            <div className="hidden md:flex space-x-8">
               <a
                 href="#"
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-md font-medium flex items-center"
@@ -59,7 +59,7 @@ const Header = () => {
               >
                 My Contact
               </a>
-            </nav>
+            </div>
 
             {/* User Avatar & Notification */}
             <div className="flex items-center">
@@ -67,17 +67,25 @@ const Header = () => {
                 <span className="sr-only">View notifications</span>
               </button>
 
-              <div className="ml-4 relative">
-                <div>
-                  <button className="flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                    <img
-                      className="h-8 w-8 rounded-full"
-                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                      alt="User avatar"
-                    />
-                  </button>
-                </div>
-              </div>
+            <div className="ml-4 relative">
+  <div>
+    <button className="flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+      <img
+        className="h-10 w-10 rounded-full"
+        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+        alt="User avatar"
+      />
+    </button>
+  </div>
+
+  {/* ✅ Notification Badge */}
+  <div className="absolute top-0 -right-1   translate-y-1 border-2 border-white rounded-full">
+    <span className="bg-green-500 text-white text-xs w-2 h-2 flex items-center justify-center rounded-full font-bold shadow">
+      
+    </span>
+  </div>
+</div>
+
             </div>
           </div>
         </div>

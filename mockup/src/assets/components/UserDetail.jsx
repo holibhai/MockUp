@@ -44,7 +44,7 @@ const UserDetail = () => {
   return (
       <>
 
-           <div className="mx-10 py-8">``
+           <div className="mx-20 py-8">``
                <Header/>
                <CardDetail/>
                <PersonalInfo data={userData}/>
