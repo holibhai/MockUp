@@ -79,39 +79,8 @@ return (
                 </div>
             </div>
         </div>
-    // </div>
 );
 };
 
-// Default data in case no props are passed
-PersonalInfo.defaultProps = {
-  data: {
-    work: [
-      {
-        company: "Spotify New York",
-        address: "170 William Street",
-        city: "New York, NY 10038-78 212-312-51"
-      },
-      {
-        company: "Metropolitan Museum",
-        address: "525 E 68th Street",
-        city: "New York, NY 10651-78 156-187-60",
-        tags: ["Museum", "Secondary", "BULLS"]
-      }
-    ],
-    skills: ["UI/UX", "Web - Design", "Packaging", "Print & Editorial"],
-    contact: {
-      phone: "+1 123 456 7890",
-      address: "525 E 68th Street",
-      city: "New York, NY 10651-78 156-187-60",
-      email: "hello@jeremyrose.com",
-      website: "www.jeremyrose.com"
-    },
-    basicInfo: {
-      birthday: "June 5, 1992",
-      gender: "Male"
-    }
-  }
-};
-
+ 
 export default PersonalInfo;
