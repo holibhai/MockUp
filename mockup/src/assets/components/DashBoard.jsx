@@ -279,10 +279,10 @@ const DashBoard = () => {
                   <td className="p-3">
                     <div className="flex gap-2 text-gray-500">
                       <button className="p-1 hover:text-blue-600 transition-colors">
-                        <Settings size={20} className="bg-blu" />
+                        <Settings size={20} className="text-blue-400" />
                       </button>
                       <button className="p-1 hover:text-blue-600 transition-colors">
-                        <CircleX size={20} />
+                        <CircleX size={20} className="text-red-500" />
                       </button>
                     </div>
                   </td>
