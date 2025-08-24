@@ -7,11 +7,9 @@ import {
   ChevronLeft,
   ChevronRight,
   Settings,
-  CircleX
+  CircleX,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
-
 
 const DashBoard = () => {
   // User data and pagination state
@@ -22,7 +20,7 @@ const DashBoard = () => {
   const [perPage] = useState(5);
   const [totalUsers, setTotalUsers] = useState(0);
 
-  const navigate=useNavigate();
+  const navigate = useNavigate();
 
   // Fetch user data (simulating API call)
   useEffect(() => {
@@ -203,9 +201,8 @@ const DashBoard = () => {
   };
 
   const handliClick = () => {
-        navigate('/userdetail');
-  }
-
+    navigate("/userdetail");
+  };
 
   return (
     <div className="min-h-screen bg-gray-50 p-4 md:p-6">
@@ -260,7 +257,6 @@ const DashBoard = () => {
                         <div className="text-gray-500 font-bold">
                           {user.first_name} {user.last_name}
                         </div>
-                        
                       </div>
                     </div>
                   </td>

@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react";
 import { Search, MessageCircle, Users, User, Bell } from "lucide-react";
 import { useState } from "react";
-
 
 const Header = () => {
   const [searchValue, setSearchValue] = useState("");
@@ -49,7 +48,7 @@ const Header = () => {
                   Messages
                 </a>
                 <span className="bg-blue-100 w-[30px] h-[30px] flex items-center justify-center text-blue-600 font-bold">
-                    4
+                  4
                 </span>
               </div>
 
@@ -67,25 +66,22 @@ const Header = () => {
                 <span className="sr-only">View notifications</span>
               </button>
 
-            <div className="ml-4 relative">
-  <div>
-    <button className="flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-      <img
-        className="h-10 w-10 rounded-full"
-        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-        alt="User avatar"
-      />
-    </button>
-  </div>
+              <div className="ml-4 relative">
+                <div>
+                  <button className="flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                    <img
+                      className="h-10 w-10 rounded-full"
+                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      alt="User avatar"
+                    />
+                  </button>
+                </div>
 
-  {/* ✅ Notification Badge */}
-  <div className="absolute top-0 -right-1   translate-y-1 border-2 border-white rounded-full">
-    <span className="bg-green-500 text-white text-xs w-2 h-2 flex items-center justify-center rounded-full font-bold shadow">
-      
-    </span>
-  </div>
-</div>
-
+                {/* ✅ Notification Badge */}
+                <div className="absolute top-0 -right-1   translate-y-1 border-2 border-white rounded-full">
+                  <span className="bg-green-500 text-white text-xs w-2 h-2 flex items-center justify-center rounded-full font-bold shadow"></span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -96,7 +92,7 @@ const Header = () => {
         {/* User detail content would be placed here */}
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

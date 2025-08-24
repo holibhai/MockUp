@@ -4,7 +4,7 @@ import CardDetail from "./CardDetail";
 import PersonalInfo from "./PersonalInfo";
 
 const UserDetail = () => {
-    const userData = {
+  const userData = {
     username: "Jeramay Rose",
     position: "Product Designer",
     location: "New York, NK",
@@ -42,15 +42,15 @@ const UserDetail = () => {
   };
 
   return (
-      <>
-
-           <div className="mx-20 py-8">``
-               <Header/>
-               <CardDetail/>
-               <PersonalInfo data={userData}/>
-          </div>
-      </>  
+    <>
+      <div className="mx-20 py-8">
+      
+        <Header />
+        <CardDetail userData={userData} />
+        <PersonalInfo data={userData} />
+      </div>
+    </>
   );
-};  
+};
 
 export default UserDetail;
