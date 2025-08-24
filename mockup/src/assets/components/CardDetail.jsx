@@ -51,13 +51,13 @@ return (
                                 {userData.location}
                             </span>
                         </h1>
-                        <p className="text-blue-400 text-lg font-semibold">
+                        <p className="text-blue-400 text-md font-semibold">
                             {userData.position}
                         </p>
                     </div>
 
-                    <div>
-                        <h1 className="upperCase text-sm text-gray-400 font-semibold">
+                    <div className="my-4">
+                        <h1 className="upperCase text-sm text-gray-400 font-semibold ">
                             RANKINGS
                         </h1>
                         <div className="flex items-center gap-2">
